@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="weatherapp.css" type="text/css">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/fbaf6ccae7.js" crossorigin="anonymous"></script>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="date-time"></div>
+        <div class="container">
+            <p>Enter Your Location</p>
+            <input type="text" name="Location" placeholder="Enter Your Location" class="search-box">
+            <div class="button-container">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass" id="search_Btn"></i>
+                </button>
+            </div>
+        </div>   
+        <div class="weather-body">
+            <img src="" alt="weather-Image" class="weather-Image">
+            <div class="weather-box"> 
+                <p class="temperature"> 0 <sup>°C</sup></p>
+                <p class="description">Light Rain</p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="Rainfall-chance">
+                    <i class="fa-solid fa-cloud-rain"></i>
+                    <div class="text">
+                        <span id="Rainfall-chance">%</span>
+                        <p>Chance of Rainfall</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind"> Km</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
